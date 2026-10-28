@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eee3">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Крошка · Кофе, выпечка и завтраки</title>
+  <meta name="description" content="Кофейня «Крошка»: кофе, свежая выпечка и завтраки весь день. Концепт для портфолио с демонстрацией бронирования.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Крошка · Кофе, выпечка и завтраки">
+  <meta property="og:description" content="Кофе, круассаны и завтраки весь день. Концепт кофейни для портфолио.">
+  <meta property="og:image" content="https://dmitrigabliya.github.io/kroshka-cafe/assets/morning-scene-v6.jpg">
+  <meta property="og:url" content="https://dmitrigabliya.github.io/kroshka-cafe/">
+  <link rel="canonical" href="https://dmitrigabliya.github.io/kroshka-cafe/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/kroshka-favicon-v2.png" type="image/png">
+  <link rel="preload" href="./assets/manrope-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/manrope-600.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css?v=release-v7">
+  <link rel="stylesheet" href="./menu.css?v=release-v7">
+  <link rel="stylesheet" href="./scene.css?v=release-v7">
+  <script src="./menu.js?v=release-v7" defer></script>
+  <script src="./app.js?v=release-v7" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="arrow-diagonal" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="sun" viewBox="0 0 48 48"><path d="M24 4v8m0 24v8M4 24h8m24 0h8M10 10l6 6m16 16 6 6M10 38l6-6m16-16 6-6"/><circle cx="24" cy="24" r="7"/></symbol>
+    <symbol id="cup" viewBox="0 0 48 48"><path d="M10 18h25v11a10 10 0 0 1-10 10h-5a10 10 0 0 1-10-10V18ZM35 20h3a6 6 0 0 1 0 12h-4M7 43h32M18 11c-5-5 5-5 0-10m10 10c-5-5 5-5 0-10"/></symbol>
+  </defs></svg>
+
+  <header class="header" id="header">
+    <a class="wordmark" href="#home" aria-label="Крошка · на главную"><img class="brand-logo" src="./assets/kroshka-mark-web-v2.png" width="48" height="48" alt=""><span class="brand-lockup"><span class="brand-name">крошка</span><span class="brand-type">кофе и выпечка</span></span></a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#menu" data-nav="menu">Меню</a>
+      <a href="#place" data-nav="place">Кофейня</a>
+      <a href="#questions" data-nav="questions">Вопросы</a>
+    </nav>
+    <div class="header-actions">
+      <button class="button button-small" data-book>Бронь столика <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></button>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <dialog id="mobile-nav" class="mobile-nav" aria-label="Меню навигации">
+    <div class="mobile-nav-top"><a class="wordmark" href="#home"><img class="brand-logo" src="./assets/kroshka-mark-web-v2.png" width="48" height="48" alt=""><span class="brand-lockup"><span class="brand-name">крошка</span><span class="brand-type">кофе и выпечка</span></span></a><button class="close-button" data-close-menu aria-label="Закрыть меню">×</button></div>
+    <nav aria-label="Мобильная навигация"><a href="#menu">Меню</a><a href="#place">Кофейня</a><a href="#questions">Вопросы</a><button data-book>Забронировать столик <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></button></nav>
+    <p>Ежедневно с 08:00 до 22:00</p>
+  </dialog>
+
+  <main id="main">
+    <section class="hero morning-hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-scene">
+        <img src="./assets/morning-scene-v6.jpg" width="1536" height="1024" fetchpriority="high" alt="Капучино в жёлтой чашке, слоёный круассан и крошки на столе в утреннем свете">
+        <svg class="coffee-steam" viewBox="0 0 160 180" fill="none" aria-hidden="true"><path d="M55 160C25 128 88 104 58 72C30 42 65 28 58 8"/><path d="M85 174C56 136 115 115 87 80C62 50 91 28 87 12"/><path d="M116 160C91 128 139 109 117 77C94 45 120 32 119 16"/></svg>
+      </div>
+      <div class="container hero-layout"><div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Кофейня и пекарня</p>
+        <h1 id="hero-title"><span>Кофе,</span><span>выпечка</span><span>и завтраки.</span></h1>
+        <p class="hero-description">Варим кофе, печём круассаны.<br class="desktop-break"> Завтраки готовим весь день.</p>
+        <button class="button hero-button" data-book>Забронировать столик <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></button>
+        <p class="hero-note">Капучино 290 ₽ · круассан 240 ₽</p>
+      </div></div>
+      <p class="hero-hours">Каждый день <span>с 08:00 до 22:00</span></p>
+    </section>
+
+    <section class="menu-section section container" id="menu" aria-labelledby="menu-title">
+      <div class="section-top reveal"><div><p class="eyebrow section-index">Меню</p><h2 id="menu-title">Выбирайте<br>к своему кофе.</h2></div><div class="menu-heading-aside"><p>18 позиций · завтраки весь день</p><button class="tray-link" type="button" data-open-tray><span class="tray-mini" aria-hidden="true">◡</span> Мой поднос <span data-tray-count>0</span></button></div></div>
+      <div class="menu-controls reveal">
+        <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+          <button id="tab-all" role="tab" aria-selected="true" aria-controls="menu-panel" data-category="all">Всё <span>18</span></button>
+          <button id="tab-coffee" role="tab" aria-selected="false" aria-controls="menu-panel" tabindex="-1" data-category="coffee">Кофе <span>6</span></button>
+          <button id="tab-drinks" role="tab" aria-selected="false" aria-controls="menu-panel" tabindex="-1" data-category="drinks">Другие напитки <span>4</span></button>
+          <button id="tab-bakery" role="tab" aria-selected="false" aria-controls="menu-panel" tabindex="-1" data-category="bakery">Выпечка <span>4</span></button>
+          <button id="tab-breakfast" role="tab" aria-selected="false" aria-controls="menu-panel" tabindex="-1" data-category="breakfast">Завтраки <span>4</span></button>
+        </div>
+        <label class="menu-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="menu-search" type="search" placeholder="Найти в меню" aria-label="Найти в меню" autocomplete="off"></label>
+      </div>
+      <div class="menu-meta"><p id="menu-result-count" aria-live="polite">18 позиций в меню</p></div>
+      <div id="menu-panel" class="menu-grid reveal" role="tabpanel" aria-labelledby="tab-all" tabindex="0">
+        <article class="menu-item"><div class="menu-image"><img src="./assets/hero.jpg" loading="lazy" width="1122" height="1402" alt="Капучино с рисунком на молочной пенке"></div><div class="item-heading"><h3>Капучино</h3><p>290 ₽</p></div><p class="item-description">Двойной эспрессо и молочная пена</p><p class="item-detail">250 мл · есть растительное молоко</p></article>
+        <article class="menu-item"><div class="menu-image"><img src="./assets/pastry.jpg" loading="lazy" width="1024" height="1024" alt="Золотистый круассан на керамической тарелке"></div><div class="item-heading"><h3>Круассан</h3><p>240 ₽</p></div><p class="item-description">Классический круассан на сливочном масле</p><p class="item-detail">85 г · со сливочным маслом</p></article>
+        <article class="menu-item"><div class="menu-image"><img src="./assets/breakfast.jpg" loading="lazy" width="1024" height="1024" alt="Скрэмбл на бриоши с томатами и зеленью"></div><div class="item-heading"><h3>Скрэмбл на бриоши</h3><p>490 ₽</p></div><p class="item-description">Мягкие яйца, тёплая бриошь и томаты</p><p class="item-detail">260 г · подаём весь день</p></article>
+      </div>
+      <div class="menu-more"><button class="outline-button" id="show-more" type="button" hidden>Показать всё меню <span aria-hidden="true">↓</span></button></div>
+      <p class="menu-footnote">Концепт для портфолио. Меню и цены вымышлены. Поднос работает только в этой странице.</p>
+    </section>
+
+    <section class="place-section section" id="place" aria-labelledby="place-title">
+      <div class="container place-grid">
+        <figure class="interior-photo reveal"><img src="./assets/interior.jpg" loading="lazy" width="1536" height="1024" alt="Солнечный зал кофейни с деревянными столами, большими окнами и оливковой мягкой скамьёй"></figure>
+        <div class="place-copy reveal"><p class="eyebrow section-index">Кофейня</p><h2 id="place-title">Столик у окна<br>или в зале.</h2><p class="place-description">Небольшой зал с деревянными столами и большими окнами. Есть общий стол с розетками. Можно с ноутбуком и собакой.</p><div class="place-benefits"><div><span class="benefit-number">01</span><p><strong>Завтраки весь день</strong><br>Кухня работает до 21:30.</p></div><div><span class="benefit-number">02</span><p><strong>Для одного или компании</strong><br>Столики на 1–6 гостей.</p></div><div><span class="benefit-number">03</span><p><strong>Есть выбор молока</strong><br>Обычное, овсяное и кокосовое.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="booking-section section container" id="booking" aria-labelledby="booking-title"><div class="booking-panel"><div class="booking-intro reveal"><p class="eyebrow">Бронирование</p><h2 id="booking-title">Забронировать<br>столик.</h2><p>Выберите дату, время и количество гостей.</p><button class="button button-light" data-book>Забронировать столик <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></button><p class="booking-disclaimer">Демонстрация · без оплаты и настоящей записи</p></div><ol class="booking-steps reveal"><li><span>01</span><div><h3>Дата и время</h3><p>Начало визита с 08:00 до 20:30.</p></div></li><li><span>02</span><div><h3>Гости и место</h3><p>До шести гостей. У окна, в зале или за общим столом.</p></div></li><li><span>03</span><div><h3>Демоподтверждение</h3><p>Запись можно отменить в том же окне.</p></div></li></ol><span class="booking-flower" aria-hidden="true">✳</span></div></section>
+
+    <section class="faq-section section container" id="questions" aria-labelledby="faq-title"><div class="faq-intro reveal"><h2 id="faq-title">Вопросы</h2></div><div class="faq-list reveal">
+      <details><summary>Это настоящая кофейня?<span aria-hidden="true">+</span></summary><p>Нет, это концепт для портфолио. Меню, цены и изображения вымышлены.</p></details>
+      <details><summary>Как работает бронь на этом сайте?<span aria-hidden="true">+</span></summary><p>Можно выбрать дату, время, число гостей и столик, затем получить демонстрационное подтверждение. Данные остаются только в открытой странице и никуда не отправляются. Настоящий столик не резервируется.</p></details>
+      <details><summary>Можно прийти с ноутбуком?<span aria-hidden="true">+</span></summary><p>В концепции предусмотрен общий стол с розетками. Его можно выбрать в форме.</p></details>
+      <details><summary>А с собакой можно?<span aria-hidden="true">+</span></summary><p>Да, в концепции кофейни можно приходить с собакой.</p></details>
+      <details><summary>Есть растительное молоко и кофе без кофеина?<span aria-hidden="true">+</span></summary><p>В меню концепта предусмотрены овсяное и кокосовое молоко, а также кофе без кофеина. Для реального кафе состав, наличие и аллергены нужно было бы уточнить у бариста.</p></details>
+      <details><summary>На сколько можно забронировать столик?<span aria-hidden="true">+</span></summary><p>Демонстрация предлагает визит на полтора часа для компании от одного до шести гостей. Время начала можно выбрать с 08:00 до 20:30. Чтобы отменить демобронь, нажмите кнопку в подтверждении.</p></details>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="wordmark footer-wordmark" href="#home"><img class="brand-logo" src="./assets/kroshka-mark-web-v2.png" width="48" height="48" alt=""><span class="brand-lockup"><span class="brand-name">крошка</span><span class="brand-type">кофе и выпечка</span></span></a><p>Кофе, выпечка и завтраки.<br>Ежедневно с 08:00 до 22:00.</p><a class="back-to-top" href="#home">Наверх <svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></a></div><div class="footer-bottom"><p>© 2026 Крошка · концепт кофейни для портфолио</p><div><a href="./privacy.html">Конфиденциальность</a><a href="./terms.html">О проекте</a></div></div></div></footer>
+
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-title">
+    <div class="product-dialog-toolbar"><button class="close-button product-close" type="button" data-close-product aria-label="Закрыть блюдо">×</button></div>
+    <div class="product-detail-layout"><div class="product-detail-photo"><img id="product-image" src="./assets/hero.jpg" width="1024" height="1024" alt=""></div><div class="product-detail-body">
+      <p class="eyebrow" id="product-category">Кофе</p><h2 id="product-title">Капучино</h2><p id="product-description"></p>
+      <dl class="product-composition"><dt>Состав базового рецепта</dt><dd id="product-ingredients"></dd></dl>
+      <p class="product-allergens"><strong>Аллергены и особенности:</strong> <span id="product-allergens"></span></p>
+      <section class="nutrition" aria-labelledby="nutrition-title">
+        <div class="nutrition-heading"><h3 id="nutrition-title">Пищевая ценность</h3><div class="nutrition-toggle" role="group" aria-label="Расчёт пищевой ценности"><button type="button" data-nutrition="portion" aria-pressed="true">На порцию</button><button type="button" data-nutrition="100" aria-pressed="false" id="nutrition-unit">На 100 г</button></div></div>
+        <p id="nutrition-serving">Одна порция</p>
+        <div class="nutrition-values" aria-live="polite"><div class="nutrition-energy"><strong id="nutrition-kcal">0</strong><span>ккал</span><small id="nutrition-kj">0 кДж</small></div><div><strong id="nutrition-protein">0 г</strong><span>Белки</span></div><div><strong id="nutrition-fat">0 г</strong><span>Жиры</span></div><div><strong id="nutrition-carbs">0 г</strong><span>Углеводы</span></div></div>
+        <p class="nutrition-note">Примерные данные для демо. При смене объёма и молока значения пересчитываются; с реальным блюдом они могут отличаться.</p>
+      </section>
+      <form id="product-form"><fieldset id="product-sizes"><legend>Объём</legend><div class="option-chips" id="size-options"></div></fieldset>
+      <fieldset id="product-milks"><legend>Молоко</legend><div class="option-chips" id="milk-options"></div></fieldset>
+      <label class="decaf-option" id="decaf-label"><input id="product-decaf" type="checkbox"> Без кофеина <span>без доплаты</span></label>
+      <div class="product-purchase"><div class="quantity-stepper"><button type="button" id="product-minus" aria-label="Уменьшить количество">−</button><output id="product-quantity" aria-label="Количество">1</output><button type="button" id="product-plus" aria-label="Увеличить количество">+</button></div><button type="submit" class="button" id="add-configured">На поднос <span id="product-price">290 ₽</span></button></div>
+      </form><button class="pairing-button" id="product-pairing" type="button"></button><p class="product-demo">Демонстрация · заказ никуда не отправляется</p>
+    </div></div>
+  </dialog>
+
+  <dialog class="tray-dialog" id="tray-dialog" aria-labelledby="tray-title"><div class="tray-heading"><div><p class="eyebrow">Ваш выбор</p><h2 id="tray-title">На подносе</h2></div><button class="close-button" type="button" data-close-tray aria-label="Закрыть поднос">×</button></div><div id="tray-content"></div><div id="tray-footer" hidden><div class="tray-total"><span>Итого</span><strong id="tray-total">0 ₽</strong></div><p class="tray-disclaimer">Это демонстрация. Заказ не отправляется в кафе.</p><div class="tray-actions"><button class="button" type="button" data-book>Забронировать столик <svg class="icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></button><button class="text-button" id="clear-tray" type="button">Очистить поднос</button></div></div></dialog>
+  <button class="floating-tray" type="button" data-open-tray hidden><span class="floating-tray-count" data-tray-count>0</span><span>Мой поднос</span><strong id="floating-total">0 ₽</strong><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button>
+  <div class="menu-toast" id="menu-toast" role="status" aria-live="polite"></div>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><a class="wordmark" href="#home" data-close-book><img class="brand-logo" src="./assets/kroshka-mark-web-v2.png" width="48" height="48" alt=""><span class="brand-lockup"><span class="brand-name">крошка</span><span class="brand-type">кофе и выпечка</span></span></a><button class="close-button" data-close-book aria-label="Закрыть бронирование">×</button></div>
+    <div id="booking-form-view"><p class="eyebrow">Демонстрация бронирования</p><h2 id="dialog-title">Бронь столика</h2><p class="dialog-description">Выберите дату и место. Данные никуда не отправляются.</p>
+      <form id="booking-form" novalidate>
+        <div class="form-row"><div class="form-field"><label for="visit-date">Дата визита</label><input type="date" id="visit-date" name="date" required aria-describedby="date-error"><p class="field-error" id="date-error"></p></div><div class="form-field"><label for="visit-time">Во сколько?</label><select id="visit-time" name="time" required aria-describedby="time-error"></select><p class="field-error" id="time-error"></p></div></div>
+        <div class="form-row"><div class="form-field"><label for="guest-count">Сколько вас будет?</label><select id="guest-count" name="guests"><option value="1">Только я</option><option value="2" selected>Нас двое</option><option value="3">Трое гостей</option><option value="4">Четверо гостей</option><option value="5">Пятеро гостей</option><option value="6">Шестеро гостей</option></select></div><div class="form-field"><label for="guest-name">Как к вам обращаться?</label><input id="guest-name" name="name" type="text" required minlength="2" maxlength="40" autocomplete="off" placeholder="Можно вымышленное имя" aria-describedby="name-error"><p class="field-error" id="name-error"></p></div></div>
+        <fieldset class="seat-field"><legend>Место</legend><div class="seat-options"><label><input type="radio" name="seat" value="window" checked><span><span class="seat-art window-art" aria-hidden="true">▥</span>У окна</span></label><label><input type="radio" name="seat" value="hall"><span><span class="seat-art" aria-hidden="true">◯</span>В зале</span></label><label><input type="radio" name="seat" value="shared"><span><span class="seat-art" aria-hidden="true">▤</span>Общий стол</span></label></div></fieldset>
+        <p class="form-summary" id="form-summary" aria-live="polite"></p>
+        <button class="button form-submit" type="submit"><span>Создать демобронь</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#arrow-diagonal"/></svg></button>
+        <p class="form-privacy">Это демо. Не указывайте настоящие контакты.<br>Ничего не отправляем и не сохраняем после перезагрузки.</p>
+      </form>
+    </div>
+    <div id="booking-result" class="booking-result" hidden aria-live="polite"></div>
+  </dialog>
+  <noscript><div class="noscript-notice">Для полного меню, подноса и демонстрации бронирования включите JavaScript. Несколько позиций меню доступны ниже без него.</div></noscript>
+</body>
+</html>

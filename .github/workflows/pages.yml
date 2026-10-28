@@ -1,0 +1,43 @@
+name: Check and publish Kroshka
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - 'scripts/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the project
+        uses: actions/checkout@v6
+      - name: Check JavaScript and site files
+        run: |
+          node --check dist/app.js
+          node --check dist/menu.js
+          python3 scripts/check_site.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Package only the public site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy the site
+        id: deployment
+        uses: actions/deploy-pages@v4
